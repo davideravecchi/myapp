@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">MY PORCINO</string>
+
+    <string name="login_title">MY PORCINO</string>
+    <string name="login_username">UserName</string>
+    <string name="login_pwd">Password</string>
+    <string name="login_button_ok">LOGIN</string>
+    <string name="login_button_reset">ANNULLA</string>
+
+    <string name="geo_title">MYGEO</string>
+    <string name="geo_lat">LATITUDINE</string>
+    <string name="geo_long">LONGITUDINE</string>
+    <string name="geo_ricarica">RICALCOLA</string>
+
+    <string name="home_btn_new">INSERISCI NUOVA LOCATION</string>
+    <string name="home_btn_search">CERCA LE MIE LOCATION</string>
+    <string name="home_btn_utilities">UTILITIES</string>
+    <string name="home_logout">LOGOUT</string>
+
+    <string name="newF_tipo">Tipo ritrovamento</string>
+    <string name="newF_quantita">Quantità</string>
+    <string name="newF_valutazione">Valutazione</string>
+    <string name="newF_localita">Località</string>
+    <string name="newF_note">Note</string>
+    <string name="newF_coords">Coordinate (Lat. / Long.)</string>
+    <string name="newF_salva">SALVA</string>
+    <string name="newF_chiudi">CHIUDI</string>
+
+    <string name="search_tipo">Tipo ritrovamento</string>
+    <string name="search_cerca">CERCA</string>
+    <string name="search_chiudi">CHIUDI</string>
+
+
+    <string name="rc_localita">Località: </string>
+    <string name="rc_data">Data: </string>
+    <string name="rc_note">Note: </string>
+    <string name="rc_valutazione">Valutazione: </string>
+    <string name="rc_tipologia">Tipologia: </string>
+    <string name="rc_mappa">TIENI PREMUTO PER VEDERE SULLA MAPPA</string>
+
+    <string name="fm_canctutti">CANCELLA TUTTI I DATI PRESENTI!</string>
+    <string name="fm_btncanctutti">CANCELLA TUTTO</string>
+    <string name="fm_seleziona">SELEZIONA PARAMETRI PER LA CANCELLAZIONE!</string>
+    <string name="fm_da">DA:</string>
+    <string name="fm_a">A:</string>
+    <string name="fm_tipo">Tipo ritrovamento</string>
+    <string name="fm_valutazione">Valutazione: </string>
+    <string name="fm_btncancsel">CANCELLA SELEZIONE</string>
+    <string name="fm_chiudi">CHIUDI</string>
+</resources>

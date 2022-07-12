@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/porcino2"
+    android:orientation="vertical"
+    tools:context=".search_findings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listgrad"
+        android:elevation="28dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:shadowColor="#011c04"
+            android:shadowDx="0"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            android:text="@string/login_title"
+            android:textAlignment="center"
+            android:textColor="#eeeeee"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:fontFamily="sans-serif"
+                android:shadowColor="#000f02"
+                android:shadowDx="1"
+                android:shadowDy="6"
+                android:shadowRadius="6"
+                android:text="@string/search_tipo"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spn_search_tipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:background="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:spinnerMode="dropdown"
+                android:textSize="10dp"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_2"
+                android:fontFamily="sans-serif"
+                android:onClick="search_findings"
+                android:text="@string/search_cerca"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:layout_weight="3"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lst_findings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/cmd_chiudi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_4"
+            android:fontFamily="sans-serif"
+            android:onClick="chiudi"
+            android:text="@string/search_chiudi"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

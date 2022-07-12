@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/porcino"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/listgrad"
+        android:elevation="28dp"
+
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_title"
+                android:textSize="30sp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#eeeeee"
+                android:textAlignment="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textStyle="bold"
+                android:shadowColor="#011c04"
+                android:shadowDx="0"
+                android:shadowDy="6"
+                android:shadowRadius="9"
+                />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="55dp"
+        >
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+            <Button
+                android:id="@+id/cmd_new_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_1"
+                android:fontFamily="sans-serif"
+                android:onClick="newfinding"
+                android:text="@string/home_btn_new"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+            <Button
+                android:id="@+id/cmd_search_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_2"
+                android:fontFamily="sans-serif"
+                android:onClick="search"
+                android:text="@string/home_btn_search"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+            <Button
+                android:id="@+id/cmd_delete_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_3"
+                android:fontFamily="sans-serif"
+                android:onClick="goManagement"
+                android:text="@string/home_btn_utilities"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            >
+            <Button
+                android:id="@+id/cmd_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_4"
+                android:fontFamily="sans-serif"
+                android:onClick="goLogout"
+                android:text="@string/home_logout"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

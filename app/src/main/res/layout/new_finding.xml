@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".new_finding"
+    android:background="@drawable/porcino4"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@drawable/listgrad"
+        android:elevation="28dp"
+
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_title"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#eeeeee"
+            android:textAlignment="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textStyle="bold"
+            android:shadowColor="#011c04"
+            android:shadowDx="0"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            />
+    </LinearLayout>
+
+    <!-- TIPO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/newF_tipo"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowColor="#000f02"
+            android:shadowDx="1"
+            android:shadowDy="6"
+            android:shadowRadius="6"
+            />
+
+        <Spinner
+            android:id="@+id/spn_tipo_finding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:background="#FFFFFF"
+            android:textSize="14dp"
+            android:spinnerMode="dropdown"
+            />
+        <!-- **************************************** -->
+    </LinearLayout>
+
+    <!-- QUANTITA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/newF_quantita"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowColor="#000f02"
+            android:shadowDx="1"
+            android:shadowDy="6"
+            android:shadowRadius="6"
+            android:layout_weight="3"
+            />
+
+
+        <EditText
+            android:id="@+id/txt_quantita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:fontFamily="sans-serif"
+            android:background="#FFFFFF"
+            android:textColor="#011c04"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <!-- **************************************** -->
+
+
+    <!-- VALUTAZIONE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Valutazione"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:shadowColor="#000f02"
+            android:shadowDx="1"
+            android:shadowDy="6"
+            android:shadowRadius="6"
+            android:layout_weight="3"
+            />
+
+
+        <Spinner
+            android:id="@+id/spn_valutazione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:background="#FFFFFF"
+            android:textSize="14dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <!-- **************************************** -->
+
+
+    <!-- LOCALITA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/newF_localita"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:shadowColor="#000f02"
+            android:shadowDx="1"
+            android:shadowDy="6"
+            android:shadowRadius="6"
+            android:layout_weight="3"
+            />
+
+        <EditText
+            android:id="@+id/txt_localita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:background="#FFFFFF"
+            android:textColor="#011c04"
+            android:textSize="16dp"
+            android:padding="8dp"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <!-- **************************************** -->
+
+    <!-- Note -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/newF_note"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:shadowColor="#000f02"
+        android:shadowDx="1"
+        android:shadowDy="6"
+        android:shadowRadius="6" />
+
+    <EditText
+        android:id="@+id/txt_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:textColor="#011c04"
+        android:textSize="16dp"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:maxLines="7"
+        android:scrollbars="vertical"
+        />
+    <!-- **************************************** -->
+
+    <!--            COORDIANTE     -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/newF_coords"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:shadowColor="#000f02"
+        android:shadowDx="1"
+        android:shadowDy="6"
+        android:shadowRadius="6" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <!-- LATITUDINE -->
+            <EditText
+                android:id="@+id/txt_lat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textColor="#011c04"
+                android:textSize="16dp"
+                android:padding="2dp"
+                />
+
+            <!-- LONGITUDINE -->
+            <EditText
+                android:id="@+id/txt_lon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="2dp"
+                android:background="#FFFFFF"
+                android:fontFamily="sans-serif"
+                android:textColor="#011c04"
+                android:textSize="16dp"
+                android:padding="2dp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:background="#300000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ricarica_coords"
+            android:src="@mipmap/ricarica_coords"
+            android:layout_marginLeft="3dp"
+            />
+
+
+        <ImageButton
+            android:background="#300000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="viewMapsCoords"
+            android:src="@mipmap/coords_maps"
+            android:layout_marginLeft="3dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="15dp"
+        >
+
+        <Button
+            android:id="@+id/cmd_save_f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_2"
+            android:onClick="salvataggio_finding"
+            android:fontFamily="sans-serif"
+            android:text="@string/newF_salva"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp"
+            />
+
+
+        <Button
+            android:id="@+id/cmd_chiudi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_4"
+            android:fontFamily="sans-serif"
+            android:onClick="chiudi"
+            android:text="@string/newF_chiudi"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+</LinearLayout>
